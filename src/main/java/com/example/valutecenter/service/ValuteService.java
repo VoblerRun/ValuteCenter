@@ -16,8 +16,6 @@ import java.util.List;
 public class ValuteService {
     private ValuteRepository valuteRepository;
 
-
-
     public void create(List<Valute> valutes){
         valuteRepository.saveAll(valutes);
     }
