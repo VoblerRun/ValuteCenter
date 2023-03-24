@@ -1,6 +1,8 @@
-package com.example.valutecenter.model;
+package com.example.valutecenter.repository;
 
 import java.util.Optional;
+
+import com.example.valutecenter.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Integer> {

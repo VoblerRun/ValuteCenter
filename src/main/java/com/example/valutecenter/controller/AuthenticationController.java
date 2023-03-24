@@ -1,5 +1,9 @@
 package com.example.valutecenter.controller;
 
+import com.example.valutecenter.model.request.AuthenticationRequest;
+import com.example.valutecenter.model.request.RegisterRequest;
+import com.example.valutecenter.model.response.AuthenticationResponse;
+import com.example.valutecenter.service.AuthenticationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

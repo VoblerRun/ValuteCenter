@@ -1,5 +1,6 @@
-package com.example.valutecenter.model;
+package com.example.valutecenter.model.response;
 
+import com.example.valutecenter.model.Valute;
 import lombok.Getter;
 import lombok.Setter;
 

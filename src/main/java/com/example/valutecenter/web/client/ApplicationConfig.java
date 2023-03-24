@@ -1,7 +1,7 @@
 package com.example.valutecenter.web.client;
 
 
-import com.example.valutecenter.model.UserRepository;
+import com.example.valutecenter.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

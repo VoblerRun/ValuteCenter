@@ -1,4 +1,4 @@
-package com.example.valutecenter.controller;
+package com.example.valutecenter.model.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

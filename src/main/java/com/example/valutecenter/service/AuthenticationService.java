@@ -1,7 +1,12 @@
-package com.example.valutecenter.controller;
+package com.example.valutecenter.service;
 
 
+import com.example.valutecenter.model.request.AuthenticationRequest;
+import com.example.valutecenter.model.request.RegisterRequest;
 import com.example.valutecenter.model.*;
+import com.example.valutecenter.model.response.AuthenticationResponse;
+import com.example.valutecenter.repository.TokenRepository;
+import com.example.valutecenter.repository.UserRepository;
 import com.example.valutecenter.web.client.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;

@@ -1,7 +1,9 @@
-package com.example.valutecenter.model;
+package com.example.valutecenter.repository;
 
 import java.util.List;
 import java.util.Optional;
+
+import com.example.valutecenter.model.Token;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

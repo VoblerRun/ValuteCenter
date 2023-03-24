@@ -1,6 +1,6 @@
 package com.example.valutecenter.controller;
 
-import com.example.valutecenter.model.ResponseTypeValute;
+import com.example.valutecenter.model.response.ResponseTypeValute;
 import com.example.valutecenter.service.TypeValuteService;
 import lombok.AllArgsConstructor;
 import lombok.val;

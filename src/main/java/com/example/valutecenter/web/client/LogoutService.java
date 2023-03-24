@@ -1,7 +1,7 @@
 package com.example.valutecenter.web.client;
 
 
-import com.example.valutecenter.model.TokenRepository;
+import com.example.valutecenter.repository.TokenRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

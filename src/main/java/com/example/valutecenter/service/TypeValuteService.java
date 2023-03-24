@@ -1,8 +1,7 @@
 package com.example.valutecenter.service;
 
-import com.example.valutecenter.model.ResponseTypeValute;
+import com.example.valutecenter.model.response.ResponseTypeValute;
 import com.example.valutecenter.model.Valute;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
