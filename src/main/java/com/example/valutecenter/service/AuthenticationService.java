@@ -7,7 +7,6 @@ import com.example.valutecenter.model.*;
 import com.example.valutecenter.model.response.AuthenticationResponse;
 import com.example.valutecenter.repository.TokenRepository;
 import com.example.valutecenter.repository.UserRepository;
-import com.example.valutecenter.web.client.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

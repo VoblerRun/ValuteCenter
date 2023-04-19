@@ -4,7 +4,8 @@ import com.example.valutecenter.model.Valute;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
+import java.util.Map;
+
 @Getter
 @Setter
 public class ResponseTypeValute {
@@ -13,7 +14,7 @@ public class ResponseTypeValute {
 
         private String base;
 
-        private List<Valute> rates;
+        private Map<String, Valute> rates;
 
         @Override
         public String toString()

@@ -1,4 +1,4 @@
-package com.example.valutecenter.web.client;
+package com.example.valutecenter.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

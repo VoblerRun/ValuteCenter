@@ -1,18 +1,14 @@
 package com.example.valutecenter.service;
 
-import com.example.valutecenter.model.response.ResponseTypeValute;
 import com.example.valutecenter.model.Valute;
+import com.example.valutecenter.model.response.ResponseTypeValute;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
-
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 @AllArgsConstructor
@@ -45,15 +41,19 @@ public class TypeValuteService {
         return null;
     }
 
-    private List<Valute> parseStringToRates(LinkedHashMap<String, Object> rates){
-        List<Valute> valutes = new ArrayList<>();
+    private Map<String, Valute> parseStringToRates(LinkedHashMap<String, Object> rates){
+        Map<String, Valute> nameByValute = new HashMap<>();
+        List<String> valuteNames = new ArrayList<>();
         for (String keyRate : rates.keySet()){
             Valute valute = new Valute();
             valute.setName(keyRate);
             valute.setValue(String.valueOf(rates.get(keyRate)));
-            valutes.add(valute);
+            nameByValute.put(keyRate, valute);
+
+            valuteNames.add(keyRate);
         }
-        return valutes;
+
+        return nameByValute;
     }
 
 }
